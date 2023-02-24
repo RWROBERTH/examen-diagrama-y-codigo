@@ -1,0 +1,47 @@
+proceso pago_para_docentes
+
+	definir p1, p2, p3, p4, p5 Como Caracter
+
+	definir sueldo, añoantiguedad, bonoantiguedad, descuento, sueldoliquido Como Real
+
+	escribir "Escribir Nombre y Apellido completo"
+
+	leer p1
+
+	Escribir "Escribe el número de Carnet de Identidad"
+
+	Leer  p2
+
+	escribir "Escribe el cargo asignado"
+
+	Leer p3
+
+	Escribir "escribir el montón del sueldo"
+
+	leer sueldo
+
+	Escribir "Escribe las horas trabajadas"
+
+	Leer p4
+
+	Escribir "Escribe el mes de pago"
+
+	Leer p5
+
+	Escribir "Escribe tus años de antiguedad"
+
+	leer añoantiguedad
+
+si añoantiguedad >4 entonces 
+
+2250*3*0.11=bonoantiguedad
+
+si no
+
+2250 *3*0.05=bonoantiguedad
+
+sueldo*0.11.71%=descuento 
+
+sueldo - descuento = sueldoliquido
+
+FinProceso
